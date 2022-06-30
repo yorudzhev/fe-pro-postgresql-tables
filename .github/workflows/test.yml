@@ -5,6 +5,11 @@ on:
 
 env:
   CI: true
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_DB: postgres
+  POSTGRES_PORT: 5432
+  POSTGRES_HOST: localhost
 
 jobs:
   build:
