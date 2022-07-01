@@ -10,19 +10,11 @@ describe('SQL', () => {
   beforeAll(async () => {
     client = await initConnection();
     await client.connect();
-    try {
-      await createStructure();
-    } catch (err) {
-      await client.end();
-    }
+    await createStructure();
   });
   afterAll(async () => {
     await client.end();
-    try {
-      await dropTables();
-    } catch (e) {
-      await client.end();
-    }
+    await dropTables();
   });
   it('users', async () => {
     const names = ['Bohdan', 'Roman', 'Ivan'];
