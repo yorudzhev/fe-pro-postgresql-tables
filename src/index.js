@@ -24,6 +24,7 @@ export const createStructure = async () => {
   client.connect();
 
   // Your code is here...
+  // Your code is here...
 
   client.end();
 };
