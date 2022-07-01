@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon --exec npx babel-node src/server.js",
+    "start": "nodemon --exec npx babel-node src/check.js",
     "start:db": "docker-compose up -d postgres",
     "db:migrate": "npx sequelize db:migrate",
     "db:undo": "npx sequelize db:migrate:undo:all",
